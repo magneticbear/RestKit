@@ -351,7 +351,7 @@ RKRequestMethod RKRequestMethodTypeFromName(NSString *methodName) {
                                   tokenSecret:self.OAuth1AccessTokenSecret];
         else if (self.method == RKRequestMethodPOST)
             echo = [GCOAuth URLRequestForPath:[_URL path]
-                               POSTParameters:parameters
+                               POSTParameters:self.params.copy
                                        scheme:[_URL scheme]
                                          host:[_URL hostAndPort]
                                   consumerKey:self.OAuth1ConsumerKey
