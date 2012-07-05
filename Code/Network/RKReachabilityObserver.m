@@ -287,8 +287,8 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 #pragma Reachability Flag Introspection
 
 - (void)validateIntrospection {
-    NSAssert(_reachabilityRef != NULL, @"connectionRequired called with NULL reachabilityRef");
-    NSAssert(self.isReachabilityDetermined, @"Cannot inspect reachability state: no reachabilityFlags available. Be sure to check isReachabilityDetermined");
+//    NSAssert(_reachabilityRef != NULL, @"connectionRequired called with NULL reachabilityRef");
+//    NSAssert(self.isReachabilityDetermined, @"Cannot inspect reachability state: no reachabilityFlags available. Be sure to check isReachabilityDetermined");
 }
 
 - (BOOL)isNetworkReachable {
